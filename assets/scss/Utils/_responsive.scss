@@ -1,0 +1,119 @@
+@import "../Base/resets","../Base/typography";
+@import "./variables","./mixins";
+
+@media screen and (max-width: 1024px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .partenaires {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        ul {
+            @include flex (column);
+
+            img {
+                padding: 1rem ;
+            }
+        }
+    }
+    .infos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+
+    }
+  
+    .newsroom {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    left: 1rem;
+
+    a {
+        position:static;
+    }
+    }
+    .news {
+    width: 100%;
+    height: auto;
+    position: static;
+    display: flex;
+    flex-direction: column;
+
+        article {
+            width: 100%;
+            height: auto;
+            position: relative;
+            div {
+                width: 100%;
+                height: auto;
+                
+                padding: 2rem;
+                img {
+                    position: static;
+                    align-items: center;
+                }
+            }
+            a {
+                bottom:0.5rem;  
+                
+            }
+        }
+    }
+
+    .gaming {
+    width: 100%;
+    height: auto;
+    @include flex (column, center, center);
+     
+        article {
+            width: 100%;
+            height: auto;
+
+            div {
+                padding: 1rem;
+
+                p {
+                    padding: 2rem;
+                }
+                a{
+                    position: absolute;
+                    bottom: 0.5rem;
+                 } 
+            }
+        }
+   
+    }
+    .titre {
+        
+        height: auto;
+        justify-content: center;
+        div {
+            
+            img {
+            width: 100%;
+            height: auto;
+            }
+
+            p {
+            font-size: 1rem;
+            }
+
+            div {
+               a {
+                font-size: 1rem;
+               } 
+            }
+
+        }
+        
+    }
+
+  
+}

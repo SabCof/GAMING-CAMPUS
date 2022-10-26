@@ -1,0 +1,42 @@
+@import "../Base/resets","../Base/typography";
+@import "./variables","./mixins";
+
+.infos {
+    width: 100%;
+    background-color: $whiteColors;
+    @include flex (space-around, center);
+    height: 25rem;
+
+    div {
+        width: 20rem;
+        height: 25rem;
+        padding: 2rem;
+        img {
+            padding-top: 2.5rem;
+        }
+
+    }
+    ul {
+        padding-left: 0;
+    }
+    a {
+        color: $fourthColors;
+        padding:0.5 0;
+        line-height: 2rem;
+    }
+    .contact {
+        ul {
+            display: flex;
+
+            i {
+                padding: 0.5rem;
+            }
+        }
+       div {
+           p {
+            font-size: small;
+           } 
+        }
+    }
+   
+}

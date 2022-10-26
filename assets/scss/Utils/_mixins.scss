@@ -1,0 +1,14 @@
+@mixin flex ($dir: row,$just:center, $align:center) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-items: $align;
+    flex-wrap: wrap;
+}
+@mixin btn ($color: white){
+    color: $color;
+    border: 1px solid $color;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+}
+

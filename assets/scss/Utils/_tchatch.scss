@@ -1,0 +1,14 @@
+@import "../Base/resets","../Base/typography";
+@import "./variables","./mixins";
+
+.tchatch {
+    @include flex (center);
+
+    ul {
+        @include flex (center);
+
+        img {
+            padding: 0 2rem;
+        }
+    }
+}

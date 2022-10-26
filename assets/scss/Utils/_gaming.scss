@@ -1,0 +1,35 @@
+@import "../Base/resets","../Base/typography";
+@import "./variables","./mixins";
+.gaming {
+    width: 100%;
+    height: 40rem;
+    background-color: $primaryColors;
+    @include flex ($just:center,$align:center);
+    position: relative;
+
+    article {
+        width: 20%;
+        padding: 0 1rem;
+        
+
+        div {
+            @include flex(column,center,center);
+            color: $whiteColors;
+            h3 {
+                text-align: center;
+                padding-top: 1rem;
+            }
+            p {
+                text-align: center;
+                padding: 0 2rem;
+            }
+            a{
+                 @include btn($color:$whiteColors);
+                 position: absolute;
+                 bottom: 3rem;
+            }
+           
+        }
+    }
+
+}
